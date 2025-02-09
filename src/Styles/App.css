@@ -11,7 +11,8 @@
   flex-direction: column;
   margin-right: 5px;
 }
-.shirts img {
+.shirts img,
+.preview {
   margin: 5px 0px;
   border-radius: 5px;
 }
@@ -24,7 +25,6 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  width: 800px;
 }
 
 .left-container,
@@ -41,6 +41,20 @@
   text-decoration: none;
 }
 
+.btn {
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  outline: 2px solid gray;
+}
+
 @media (max-width: 767px) {
   .left-container,
   .right-container {
@@ -49,12 +63,6 @@
   }
   .container {
     flex-direction: column;
-    gap: 50px 0px;
+    gap: 20px;
   }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-}
-
-@media (min-width: 1024px) {
 }

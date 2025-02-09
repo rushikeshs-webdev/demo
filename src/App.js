@@ -14,6 +14,11 @@ function App() {
     setCurrIndex(index);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Shirt is added to Cart!");
+  };
+
   return (
     <div className="App">
       <div className="container">
@@ -39,7 +44,7 @@ function App() {
           <img
             src={Images[currIndex]}
             alt={`Preview Image`}
-            className="shirt1"
+            className="preview"
             style={{ width: "300px", height: "300px" }}
           />
         </div>
@@ -50,6 +55,14 @@ function App() {
           <h2>Custom Fit Polo Bear Oxford Shirt</h2>
           <p>Blue polo with a classic cut. Made of smooth and soft cotton.</p>
           <h2>$99.50</h2>
+          <br />
+          <button
+            type="submit"
+            className="btn"
+            onClick={(e) => handleSubmit(e)}
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
