@@ -1,0 +1,61 @@
+.App {
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.shirts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.shirts img {
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+
+#active {
+  border: 2px solid indigo;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  width: 50%;
+}
+
+.right-container {
+  flex-direction: column;
+}
+
+.polo {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .left-container,
+  .right-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+    gap: 50px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
+}
