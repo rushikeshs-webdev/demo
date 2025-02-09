@@ -49,6 +49,7 @@ function App() {
           </a>
           <h2>Custom Fit Polo Bear Oxford Shirt</h2>
           <p>Blue polo with a classic cut. Made of smooth and soft cotton.</p>
+          <h2>$99.50</h2>
         </div>
       </div>
     </div>
